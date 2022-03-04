@@ -1,0 +1,13 @@
+{
+  "name": "@mask-design/core",
+  "version": "0.0.1",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^18"
+  },
+  "devDependencies": {},
+  "files": [
+    "src",
+    "dist"
+  ]
+}
