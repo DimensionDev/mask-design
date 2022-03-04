@@ -38,13 +38,13 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
       - uses: actions/setup-node@v2
       - run: npx anti-trojan-source --files='packages/**/src/**/*.{ts,tsx,js}'
-  type-check-and-jest:
+  type-check:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
         with:
           ref: ${{ github.event.pull_request.head.sha }}
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v2.2.1
       - uses: actions/setup-node@v2
         with:
           node-version: "17"
