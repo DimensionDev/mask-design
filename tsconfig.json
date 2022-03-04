@@ -1,0 +1,63 @@
+{
+  "references": [{ "path": "./packages/core/" }, { "path": "./packages/icons" }],
+  "compilerOptions": {
+    "paths": {},
+    // Classification follows https://www.typescriptlang.org/tsconfig
+
+    // Type Checking
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "useUnknownInCatchVariables": true,
+
+    // Modules
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": false,
+    "types": [],
+
+    // Emit
+    "declaration": true,
+    "declarationMap": true,
+    "importsNotUsedAsValues": "error",
+    "noEmitOnError": true,
+    "preserveValueImports": true,
+    "sourceMap": true,
+    "stripInternal": true, // skip type emit for @internal types
+
+    // JavaScript Support
+    "allowJs": false,
+    "checkJs": false,
+
+    // Interop Constraints
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    // Language and Environment
+    "jsx": "react-jsx",
+    "lib": ["ES2019", "DOM"],
+    "target": "ES2019",
+    "useDefineForClassFields": true,
+
+    // Projects
+    "composite": true,
+    "incremental": true,
+
+    // Completeness
+    "skipLibCheck": true // skip all type checks for .d.ts files
+  },
+  "files": [],
+  "ts-node": {
+    "compilerOptions": {},
+    "transpileOnly": true
+  }
+}
