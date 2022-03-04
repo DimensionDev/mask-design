@@ -1,8 +1,12 @@
 {
   "name": "mask-design",
+  "packageManager": "pnpm@6.32.2",
   "private": true,
   "description": "The monorepo workspace of Mask Design",
-  "scripts": {},
+  "scripts": {
+    "tsc": "tsc -b ./tsconfig.json",
+    "tsc-watch": "tsc -b -w ./tsconfig.json"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DimensionDev/mask-design.git"

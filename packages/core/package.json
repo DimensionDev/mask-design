@@ -1,6 +1,7 @@
 {
   "name": "@mask-design/core",
   "version": "0.0.1",
+  "type": "module",
   "dependencies": {},
   "peerDependencies": {
     "react": "^18"
